@@ -1,17 +1,16 @@
 :root {
-  --container-width: 1200px;
-  --container-padding: 15px;
+  --font-main: "Inter", sans-serif;
+  --font-accent: "Raleway", sans-serif;
 
-  --font-main: "Poppins", sans-serif;
-  --font-accent: "Playfair Display", serif;
-
-  --page-bg: #fff;
+  --page-bg: #f5fafa;
   --text-color: #000;
-  --accent: #ac182c;
 
-  --laptop-size: 1199px;
-  --tablet-size: 959px;
-  --mobile-size: 599px;
+  --green: #00aaa0;
+  --green-hover: #3bc9c7;
+  --red: #d53863;
+  --red-hover: #f2638a;
+
+  --time: 0.2s ease-in-out;
 }
 $vp-320: 320px;
 $vp-375: 375px;
@@ -21,7 +20,3 @@ $vp-1024: 1024px;
 $vp-1280: 1280px;
 $vp-1440: 1440px;
 $vp-1920: 1920px;
-.dark {
-  --page-bg: #252526;
-  --text-color: #fff;
-}
