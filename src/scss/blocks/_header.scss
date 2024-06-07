@@ -1,5 +1,6 @@
 .header {
   background-color: #fff;
+  box-shadow: inset 0px -1px 0px 0px rgb(233, 237, 242);
   padding: 10px 24px;
   &__row {
     display: flex;
@@ -10,5 +11,8 @@
     display: flex;
     align-items: center;
     gap: 24px;
+  }
+  @include vp-768 {
+    display: none;
   }
 }
