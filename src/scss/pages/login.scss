@@ -35,18 +35,11 @@
       display: block;
       padding-left: 36px;
       position: relative;
-      font-family: var(--font-accent);
-      font-size: 36px;
-      font-weight: 700;
-      color: #536666;
       &::before {
         content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='12.5' y1='8.5' x2='12.5' y2='6.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='11.5' y1='7.5' x2='13.5' y2='7.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='8.5' y1='8.5' x2='8.5' y2='6.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='7.5' y1='7.5' x2='9.5' y2='7.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='16.5' y1='8.5' x2='16.5' y2='6.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='15.5' y1='7.5' x2='17.5' y2='7.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='12.5' y1='16.5' x2='12.5' y2='14.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='11.5' y1='15.5' x2='13.5' y2='15.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='8.5' y1='16.5' x2='8.5' y2='14.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='7.5' y1='15.5' x2='9.5' y2='15.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='16.5' y1='16.5' x2='16.5' y2='14.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='15.5' y1='15.5' x2='17.5' y2='15.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='12.5' y1='4.5' x2='12.5' y2='2.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='11.5' y1='3.5' x2='13.5' y2='3.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='8.5' y1='4.5' x2='8.5' y2='2.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='7.5' y1='3.5' x2='9.5' y2='3.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='4.5' y1='4.5' x2='4.5' y2='2.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='3.5' y1='3.5' x2='5.5' y2='3.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='12.5' y1='12.5' x2='12.5' y2='10.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='11.5' y1='11.5' x2='13.5' y2='11.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='16.5' y1='12.5' x2='16.5' y2='10.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='15.5' y1='11.5' x2='17.5' y2='11.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='20.5' y1='12.5' x2='20.5' y2='10.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='19.5' y1='11.5' x2='21.5' y2='11.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='12.5' y1='20.5' x2='12.5' y2='18.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='11.5' y1='19.5' x2='13.5' y2='19.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='8.5' y1='20.5' x2='8.5' y2='18.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='7.5' y1='19.5' x2='9.5' y2='19.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='4.5' y1='20.5' x2='4.5' y2='18.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3Cline x1='3.5' y1='19.5' x2='5.5' y2='19.5' stroke='%2333C8BF' stroke-linecap='round'/%3E%3C/svg%3E%0A");
         position: absolute;
         left: 0;
         top: 0;
-      }
-      @include vp-768 {
-        font-size: 24px;
       }
     }
   }
@@ -141,6 +134,43 @@
       @include vp-768 {
         margin-top: 16px;
       }
+    }
+  }
+}
+
+.modal-content {
+  height: 73vh;
+  overflow-y: auto;
+  @include vp-1024 {
+    height: 69vh;
+  }
+  @include vp-768 {
+    height: 67vh;
+  }
+  p {
+    color: #536666;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--font-main);
+    a {
+      font-family: var(--font-main);
+      text-decoration: underline;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #536666;
+    }
+  }
+  ul {
+    padding-left: 20px;
+    li {
+      list-style-type: disc;
+      color: #536666;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      font-family: var(--font-main);
     }
   }
 }

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		<header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
   <div class="header__row">
     <div class="logo">
       <img src="img/Logo.svg" alt="" />
@@ -18,11 +18,64 @@
       <button class="green-border-btn">Обратный звонок</button>
       <button class="red-btn">Запись в клинику</button>
     </div>
+    <div class="burger">
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.333 24H26.6663M5.33301 8H26.6663H5.33301ZM5.33301 16H26.6663H5.33301Z"
+          stroke="#536666"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
   </div>
 </header>
+<div class="burger__menu hide">
+  <div class="burger__menu-row">
+    <div class="logo">
+      <img src="img/Logo.svg" alt="" />
+    </div>
+    <div class="close">
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          x="0.5"
+          y="0.5"
+          width="31"
+          height="31"
+          rx="15.5"
+          stroke="#DFE7E7"
+        />
+        <path
+          d="M10.5 10.5L21.5 21.5M10.5 21.5L21.5 10.5L10.5 21.5Z"
+          stroke="#536666"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+  </div>
+  <div class="header__buttons burger__menu-buttons">
+    <button class="link-btn">Акции</button>
+    <button class="green-border-btn">Обратный звонок</button>
+    <button class="red-btn">Запись в клинику</button>
+  </div>
+</div>
 
-
-		<footer class="footer">
+ <footer class="footer">
   <div class="footer__row">
     <div class="logo">
       <img src="img/Logo-footer.svg" alt="" />
@@ -37,6 +90,6 @@
   </div>
 </footer>
 
-		<script src="./js/index.bundle.js"></script>
-	</body>
+    <script src="./js/index.bundle.js"></script>
+  </body>
 </html>
