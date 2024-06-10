@@ -327,11 +327,11 @@ h2 {
 }
 
 // Tabs
-.tabs {
+.tabs__inner {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  &-tags {
+  .tabs-tags {
     display: flex;
 
     &__tag {
@@ -392,14 +392,15 @@ h2 {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
+    gap: 16px;
 
     @include vp-768 {
       padding: 16px 8px;
     }
     @media (max-width: 650px) {
       grid-template-columns: 200px auto;
-      grid-gap: 8px;
+      column-gap: 8px;
+      row-gap: 16px;
     }
   }
   &-buttons {
