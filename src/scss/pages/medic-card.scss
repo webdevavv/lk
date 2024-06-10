@@ -1,0 +1,14 @@
+.analise__table_info_flex-block {
+  @include vp-500 {
+    position: relative;
+    grid-row: 1 / 3;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    .page__table-buttons {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

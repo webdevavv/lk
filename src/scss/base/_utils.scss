@@ -411,11 +411,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include vp-500 {
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      justify-content: end;
-    }
   }
   &_info_block {
     display: flex;
