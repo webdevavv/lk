@@ -77,14 +77,16 @@ var tabsManager = new TabsManager(".tabs");
 
 // Функция для изменения видимости пароля
 const visibButton = document.querySelector(".visibility-button");
-visibButton.addEventListener("click", () => {
-  const i = document.getElementById("inputPass");
-  if (i.type === "password") {
-    i.type = "text";
-  } else {
-    i.type = "password";
-  }
-});
+if (visibButton) {
+  visibButton.addEventListener("click", () => {
+    const i = document.getElementById("inputPass");
+    if (i.type === "password") {
+      i.type = "text";
+    } else {
+      i.type = "password";
+    }
+  });
+}
 
 // modals
 document.addEventListener(
