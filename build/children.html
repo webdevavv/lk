@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Профиль</title>
+    <title>Дети</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -468,7 +468,7 @@
     <div class="page__wrapper">
       <sidebar class="sidebar">
         <ul>
-          <li class="active">
+          <li>
             <a href="/index.html">
               <div class="sidebar__btn-wrapper">
                 <span class="icon">
@@ -516,7 +516,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="active">
             <a href="/children.html">
               <div class="sidebar__btn-wrapper">
                 <span class="icon">
@@ -778,214 +778,35 @@
         </ul>
       </sidebar>
 
-      <div class="profile__content">
-        <div class="profile__item">
-          <div class="profile__item-title">
-            <span>Личные данные</span>
-          </div>
-          <div class="personal_info">
-            <div class="avatar">
-              <img src="img/avatar.png" alt="" />
+      <div class="content">
+        <h1 class="page__title">Ваши дети</h1>
+        <div class="page__table">
+          <div class="page__table-item">
+            <div class="page__table_info_block">
+              <span class="label">ФИО</span>
+              <div class="text">Пушнин Иван Васильевич</div>
             </div>
-            <div class="personal_info__grid personal_info__grid-name">
-              <div class="personal_info__block">
-                <span class="label">ФИО</span>
-                <div class="text">Пушнин Иван Васильевич</div>
-              </div>
-              <div class="personal_info__block">
-                <span class="label">Номер телефона</span>
-                <div class="text">+7 (123) 456-78-90</div>
-              </div>
-
-              <div class="personal_info__block">
-                <span class="label">Дата рождения</span>
-                <div class="text">25.06.1985</div>
-              </div>
+            <div class="page__table_info_block">
+              <span class="label">Номер телефона</span>
+              <div class="text">+7 (123) 456-78-90</div>
             </div>
-            <div class="personal_info__grid">
-              <div class="personal_info__block">
-                <span class="label">Подарочный сертификат</span>
-                <div class="text accent-text">540 ₽</div>
-              </div>
-              <div class="personal_info__block">
-                <span class="label">Программа лояльности</span>
-                <div class="text accent-text">540 баллов</div>
-              </div>
+            <div class="page__table_info_block">
+              <span class="label">Дата рождения</span>
+              <div class="text">25.06.1985</div>
             </div>
           </div>
-        </div>
-        <div class="profile__item children">
-          <div class="profile__item-title">
-            <span>Дети</span>
-          </div>
-          <div class="profile__item-table">
-            <div class="table__item">
-              <div class="table__item_info_block">
-                <span class="label">ФИО</span>
-                <div class="text">Пушнин Иван Васильевич</div>
-              </div>
-              <div class="table__item_info_block">
-                <span class="label">Дата рождения</span>
-                <div class="text">25.06.1985</div>
-              </div>
+          <div class="page__table-item">
+            <div class="page__table_info_block">
+              <span class="label">ФИО</span>
+              <div class="text">Пушнин Иван Васильевич</div>
             </div>
-            <div class="table__item">
-              <div class="table__item_info_block">
-                <span class="label">ФИО</span>
-                <div class="text">Пушнин Иван Васильевич</div>
-              </div>
-              <div class="table__item_info_block">
-                <span class="label">Дата рождения</span>
-                <div class="text">25.06.1985</div>
-              </div>
+            <div class="page__table_info_block">
+              <span class="label">Номер телефона</span>
+              <div class="text">+7 (123) 456-78-90</div>
             </div>
-          </div>
-        </div>
-        <div class="profile__item analysis">
-          <div class="profile__item-title">
-            <span>Последние анализы</span>
-            <span>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9 5L16 12L9 19"
-                  stroke="#D53863"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-          </div>
-          <div class="profile__item-table">
-            <div class="table__item">
-              <div class="table__item_info_block">
-                <span class="label">ФИО</span>
-                <div class="text">Пушнин Иван Васильевич</div>
-              </div>
-              <div class="table__item_info_block">
-                <span class="label">Дата рождения</span>
-                <div class="text">25.06.1985</div>
-              </div>
-              <div class="table__item-icon">
-                <a href="#">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4 16.5V17.5C4 18.2956 4.31607 19.0587 4.87868 19.6213C5.44129 20.1839 6.20435 20.5 7 20.5H17C17.7956 20.5 18.5587 20.1839 19.1213 19.6213C19.6839 19.0587 20 18.2956 20 17.5V16.5M16 12.5L12 16.5M12 16.5L8 12.5M12 16.5V4.5"
-                      stroke="#536666"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="table__item">
-              <div class="table__item_info_block">
-                <span class="label">ФИО</span>
-                <div class="text">Пушнин Иван Васильевич</div>
-              </div>
-              <div class="table__item_info_block">
-                <span class="label">Дата рождения</span>
-                <div class="text">25.06.1985</div>
-              </div>
-              <div class="table__item-icon">
-                <a href="#">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4 16.5V17.5C4 18.2956 4.31607 19.0587 4.87868 19.6213C5.44129 20.1839 6.20435 20.5 7 20.5H17C17.7956 20.5 18.5587 20.1839 19.1213 19.6213C19.6839 19.0587 20 18.2956 20 17.5V16.5M16 12.5L12 16.5M12 16.5L8 12.5M12 16.5V4.5"
-                      stroke="#536666"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="profile__item visits">
-          <div class="profile__item-title">
-            <span>Запланированные визиты</span>
-            <button class="red-link">Добавить визит</button>
-          </div>
-          <div class="profile__item-table">
-            <div class="table__item table__link-item">
-              <a href="#">
-                <div class="table__item_info_block">
-                  <span class="label">ФИО</span>
-                  <div class="text">Пушнин Иван Васильевич</div>
-                </div>
-                <div class="table__item_info_block">
-                  <span class="label">Дата рождения</span>
-                  <div class="text">25.06.1985</div>
-                </div>
-                <div class="table__item-icon">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 5.5L16 12.5L9 19.5"
-                      stroke="#536666"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div class="table__item table__link-item">
-              <a href="#">
-                <div class="table__item_info_block">
-                  <span class="label">ФИО</span>
-                  <div class="text">Пушнин Иван Васильевич</div>
-                </div>
-                <div class="table__item_info_block">
-                  <span class="label">Дата рождения</span>
-                  <div class="text">25.06.1985</div>
-                </div>
-                <div class="table__item-icon">
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 5.5L16 12.5L9 19.5"
-                      stroke="#536666"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </a>
+            <div class="page__table_info_block">
+              <span class="label">Дата рождения</span>
+              <div class="text">25.06.1985</div>
             </div>
           </div>
         </div>
