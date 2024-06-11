@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Медицинская карта</title>
+    <title>Дети</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -156,7 +156,7 @@
           </li>
         </ul>
         <ul>
-          <li class="active">
+          <li>
             <a href="/medic-card.html">
               <div class="sidebar__btn-wrapper">
                 <span class="icon">
@@ -279,8 +279,8 @@
               </div>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="active">
+            <a href="/tax_page.html">
               <div class="sidebar__btn-wrapper">
                 <span class="icon">
                   <svg
@@ -324,41 +324,54 @@
       </sidebar>
 
       <div class="content">
-        <div class="content__buttons">
-          <div class="person__cards_wrapper">
-            <a href="/medic-card.html" class="person__card">
-              <div class="avatar">
-                <img src="img/small-avatar.png" alt="" />
-              </div>
-              <div class="info">
-                <span class="name">Пушнин Иван </span>
-                <span class="age">34 года</span>
-              </div>
-            </a>
-            <a href="/medic-card-child.html" class="person__card active">
-              <div class="avatar">
-                <img src="img/avatar-empty.png" alt="" />
-              </div>
-              <div class="info">
-                <span class="name">Пушнин Олег </span>
-                <span class="age">6 лет</span>
-              </div>
-            </a>
-          </div>
-          <button class="red-btn" id="add-data-btn">Добавить данные</button>
+        <div class="page__title_wrapper">
+          <h1 class="page__title">Налоговый вычет</h1>
+          <button
+            class="red-btn red-btn--lg"
+            data-target="tax_modal"
+            data-toggle="modal"
+          >
+            Заказать вычет
+          </button>
         </div>
-
-        <div class="tabs tabs__inner">
-          <div class="tabs-tags">
-            <span class="tabs-tags__tag" onclick="hideShowButton()"
-              >Данные карты</span
-            >
-            <span class="tabs-tags__tag" onclick="hideShowButton()"
-              >История визитов</span
-            >
-          </div>
-          <div class="note">
-            <div class="icon">
+        <div class="page__table tax__table">
+          <div class="page__table-item">
+            <div class="page__table_flex-block">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 5H7C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V7C19 6.46957 18.7893 5.96086 18.4142 5.58579C18.0391 5.21071 17.5304 5 17 5H15M9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7H13C13.5304 7 14.0391 6.78929 14.4142 6.41421C14.7893 6.03914 15 5.53043 15 5M9 5C9 4.46957 9.21071 3.96086 9.58579 3.58579C9.96086 3.21071 10.4696 3 11 3H13C13.5304 3 14.0391 3.21071 14.4142 3.58579C14.7893 3.96086 15 4.46957 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                    stroke="#536666"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="page__table_info_block">
+                <span class="label">Номер справки</span>
+                <div class="text">49864984654</div>
+              </div>
+            </div>
+            <div class="page__table_info_block">
+              <span class="label">Дата выдачи</span>
+              <div class="text">22.07.24</div>
+            </div>
+            <div class="page__table_info_block">
+              <span class="label">Сумма</span>
+              <div class="text">540 ₽</div>
+            </div>
+            <div class="page__table_info_block">
+              <span class="label">Год</span>
+              <div class="text">2024</div>
+            </div>
+            <a href="#" class="download__button">
               <svg
                 width="24"
                 height="24"
@@ -367,205 +380,122 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M13 16H12V12H11M12 8H12.01M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                  d="M4 16V17C4 17.7956 4.31607 18.5587 4.87868 19.1213C5.44129 19.6839 6.20435 20 7 20H17C17.7956 20 18.5587 19.6839 19.1213 19.1213C19.6839 18.5587 20 17.7956 20 17V16M16 12L12 16M12 16L8 12M12 16V4"
                   stroke="#536666"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
-            <span class="text"
-              >Вы можете загрузить данные своей медицинской карты</span
-            >
+            </a>
           </div>
-          <div class="tabs-content">
-            <div class="tabs-content__text">
-              <div class="page__table">
-                <div class="page__table-item">
-                  <div class="page__table_info_block">
-                    <span class="label">Наименование</span>
-                    <div class="text">Анализ крови</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Дата</span>
-                    <div class="text">22.07.24</div>
-                  </div>
-                  <div
-                    class="page__table_info_flex-block analise__table_info_flex-block"
-                  >
-                    <div class="page__table_info_block">
-                      <span class="label">Комментарий</span>
-                      <div class="text">Анализ крови</div>
-                    </div>
-                    <div class="page__table-buttons">
-                      <a href="#">
-                        <svg
-                          width="24"
-                          height="25"
-                          viewBox="0 0 24 25"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M4 16.5V17.5C4 18.2956 4.31607 19.0587 4.87868 19.6213C5.44129 20.1839 6.20435 20.5 7 20.5H17C17.7956 20.5 18.5587 20.1839 19.1213 19.6213C19.6839 19.0587 20 18.2956 20 17.5V16.5M16 12.5L12 16.5M12 16.5L8 12.5M12 16.5V4.5"
-                            stroke="#536666"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </a>
-                      <a href="#">
-                        <svg
-                          width="24"
-                          height="25"
-                          viewBox="0 0 24 25"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M10 11.5V17.5M14 11.5V17.5M4 7.5H20M19 7.5L18.133 19.642C18.0971 20.1466 17.8713 20.6188 17.5011 20.9636C17.1309 21.3083 16.6439 21.5 16.138 21.5H7.862C7.35614 21.5 6.86907 21.3083 6.49889 20.9636C6.1287 20.6188 5.90292 20.1466 5.867 19.642L5 7.5H19ZM15 7.5V4.5C15 4.23478 14.8946 3.98043 14.7071 3.79289C14.5196 3.60536 14.2652 3.5 14 3.5H10C9.73478 3.5 9.48043 3.60536 9.29289 3.79289C9.10536 3.98043 9 4.23478 9 4.5V7.5H15Z"
-                            stroke="#EB5757"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="page__table-item">
-                  <div class="page__table_info_block">
-                    <span class="label">Наименование</span>
-                    <div class="text">Анализ крови</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Дата</span>
-                    <div class="text">22.07.24</div>
-                  </div>
-                  <div
-                    class="page__table_info_flex-block analise__table_info_flex-block"
-                  >
-                    <div class="page__table_info_block">
-                      <span class="label">Комментарий</span>
-                      <div class="text">Анализ крови</div>
-                    </div>
-                    <div class="page__table-buttons">
-                      <a href="#">
-                        <svg
-                          width="24"
-                          height="25"
-                          viewBox="0 0 24 25"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M4 16.5V17.5C4 18.2956 4.31607 19.0587 4.87868 19.6213C5.44129 20.1839 6.20435 20.5 7 20.5H17C17.7956 20.5 18.5587 20.1839 19.1213 19.6213C19.6839 19.0587 20 18.2956 20 17.5V16.5M16 12.5L12 16.5M12 16.5L8 12.5M12 16.5V4.5"
-                            stroke="#536666"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </a>
-                      <a href="#">
-                        <svg
-                          width="24"
-                          height="25"
-                          viewBox="0 0 24 25"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M10 11.5V17.5M14 11.5V17.5M4 7.5H20M19 7.5L18.133 19.642C18.0971 20.1466 17.8713 20.6188 17.5011 20.9636C17.1309 21.3083 16.6439 21.5 16.138 21.5H7.862C7.35614 21.5 6.86907 21.3083 6.49889 20.9636C6.1287 20.6188 5.90292 20.1466 5.867 19.642L5 7.5H19ZM15 7.5V4.5C15 4.23478 14.8946 3.98043 14.7071 3.79289C14.5196 3.60536 14.2652 3.5 14 3.5H10C9.73478 3.5 9.48043 3.60536 9.29289 3.79289C9.10536 3.98043 9 4.23478 9 4.5V7.5H15Z"
-                            stroke="#EB5757"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+          <div class="page__table-item">
+            <div class="page__table_flex-block">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 5H7C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V7C19 6.46957 18.7893 5.96086 18.4142 5.58579C18.0391 5.21071 17.5304 5 17 5H15M9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7H13C13.5304 7 14.0391 6.78929 14.4142 6.41421C14.7893 6.03914 15 5.53043 15 5M9 5C9 4.46957 9.21071 3.96086 9.58579 3.58579C9.96086 3.21071 10.4696 3 11 3H13C13.5304 3 14.0391 3.21071 14.4142 3.58579C14.7893 3.96086 15 4.46957 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                    stroke="#536666"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="page__table_info_block">
+                <span class="label">Номер справки</span>
+                <div class="text">49864984654</div>
               </div>
             </div>
-
-            <div class="tabs-content__text">
-              <div class="page__table history__table">
-                <div class="page__table-item">
-                  <div class="page__table_info_block">
-                    <span class="label">Подразделение</span>
-                    <div class="text text-accent">Ул. Пушкина 29</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Специализация</span>
-                    <div class="text text-accent">
-                      Сердечно-сосудистая хирургия, флеболог
-                    </div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Врач</span>
-                    <div class="text text-accent">Водолазов А. В.</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Дата</span>
-                    <div class="text">22.07.24</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <button class="grey-btn">Оценить работу</button>
-                  </div>
-                </div>
-                <div class="page__table-item">
-                  <div class="page__table_info_block">
-                    <span class="label">Подразделение</span>
-                    <div class="text text-accent">Ул. Пушкина 29</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Специализация</span>
-                    <div class="text text-accent">
-                      Сердечно-сосудистая хирургия, флеболог
-                    </div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Врач</span>
-                    <div class="text text-accent">Водолазов А. В.</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Дата</span>
-                    <div class="text">22.07.24</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <button class="grey-btn">Оценить работу</button>
-                  </div>
-                </div>
-                <div class="page__table-item">
-                  <div class="page__table_info_block">
-                    <span class="label">Подразделение</span>
-                    <div class="text text-accent">Ул. Пушкина 29</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Специализация</span>
-                    <div class="text text-accent">
-                      Сердечно-сосудистая хирургия, флеболог
-                    </div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Врач</span>
-                    <div class="text text-accent">Водолазов А. В.</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <span class="label">Дата</span>
-                    <div class="text">22.07.24</div>
-                  </div>
-                  <div class="page__table_info_block">
-                    <button class="grey-btn">Оценить работу</button>
-                  </div>
-                </div>
+            <div class="page__table_info_block">
+              <span class="label">Дата выдачи</span>
+              <div class="text">22.07.24</div>
+            </div>
+            <div class="page__table_info_block">
+              <span class="label">Сумма</span>
+              <div class="text">540 ₽</div>
+            </div>
+            <div class="page__table_info_block">
+              <span class="label">Год</span>
+              <div class="text">2024</div>
+            </div>
+            <a href="#" class="download__button">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 16V17C4 17.7956 4.31607 18.5587 4.87868 19.1213C5.44129 19.6839 6.20435 20 7 20H17C17.7956 20 18.5587 19.6839 19.1213 19.1213C19.6839 18.5587 20 17.7956 20 17V16M16 12L12 16M12 16L8 12M12 16V4"
+                  stroke="#536666"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="page__table-item">
+            <div class="page__table_flex-block">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 5H7C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V7C19 6.46957 18.7893 5.96086 18.4142 5.58579C18.0391 5.21071 17.5304 5 17 5H15M9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7H13C13.5304 7 14.0391 6.78929 14.4142 6.41421C14.7893 6.03914 15 5.53043 15 5M9 5C9 4.46957 9.21071 3.96086 9.58579 3.58579C9.96086 3.21071 10.4696 3 11 3H13C13.5304 3 14.0391 3.21071 14.4142 3.58579C14.7893 3.96086 15 4.46957 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                    stroke="#536666"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="page__table_info_block">
+                <span class="label">Номер справки</span>
+                <div class="text">49864984654</div>
               </div>
             </div>
+            <div class="page__table_info_block">
+              <span class="label">Дата выдачи</span>
+              <div class="text">22.07.24</div>
+            </div>
+            <div class="page__table_info_block">
+              <span class="label">Сумма</span>
+              <div class="text">540 ₽</div>
+            </div>
+            <div class="page__table_info_block">
+              <span class="label">Год</span>
+              <div class="text">2024</div>
+            </div>
+            <a href="#" class="download__button">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 16V17C4 17.7956 4.31607 18.5587 4.87868 19.1213C5.44129 19.6839 6.20435 20 7 20H17C17.7956 20 18.5587 19.6839 19.1213 19.1213C19.6839 18.5587 20 17.7956 20 17V16M16 12L12 16M12 16L8 12M12 16V4"
+                  stroke="#536666"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -574,10 +504,5 @@
     @@include('blocks/footer.html') @@include('blocks/modals.html')
 
     <script src="./js/index.bundle.js"></script>
-    <script>
-      function hideShowButton() {
-        document.getElementById("add-data-btn").classList.toggle("hide");
-      }
-    </script>
   </body>
 </html>

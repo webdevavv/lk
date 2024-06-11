@@ -1,0 +1,54 @@
+.tax__table {
+  .page__table_flex-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .icon {
+      background-color: #f5fafa;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+  }
+  .download__button {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    @include vp-500 {
+      top: 16px;
+    }
+  }
+  .page__table-item {
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 16px;
+    @include vp-1180 {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    @include vp-500 {
+      grid-template-columns: 1fr 1fr 50px;
+      .page__table_flex-block {
+        .icon {
+          display: none;
+        }
+      }
+      .page__table_info_block {
+        &:nth-child(2) {
+          grid-column: 1/2;
+          grid-row: 2/3;
+        }
+        &:nth-child(3) {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+        &:nth-child(4) {
+          grid-column: 3/4;
+          grid-row: 2/3;
+        }
+      }
+    }
+  }
+}
