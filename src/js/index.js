@@ -140,3 +140,20 @@ document.addEventListener(
   false
 );
 // modals
+
+$(".tabs-wrapper-big").each(function () {
+  let ths = $(this);
+  ths.find(".tab-item-big").not(":first").hide();
+  ths
+    .find(".tab-big")
+    .click(function () {
+      ths
+        .find(".tab-big")
+        .removeClass("active")
+        .eq($(this).index())
+        .addClass("active");
+      ths.find(".tab-item-big").hide().eq($(this).index()).fadeIn();
+    })
+    .eq(0)
+    .addClass("active");
+});
