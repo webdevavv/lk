@@ -16,7 +16,9 @@
     }
   }
   &__profile_button {
+    position: relative;
     .header__profile {
+      padding: 10px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -52,23 +54,67 @@
           }
         }
       }
-      @include hover {
-        .header__profile-avatar {
-          svg {
-            path {
-              fill: var(--green);
-              stroke: var(--green);
+    }
+    .header__profile-hover-menu {
+      position: absolute;
+      bottom: -105px;
+      left: 0;
+      width: 100%;
+      border: 1px solid #dfe7e7;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 10px 20px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+      transform: translateY(-40px);
+      opacity: 0;
+      z-index: -10;
+      transition: all var(--time);
+      .hover-menu__button {
+        cursor: pointer;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .text {
+          color: #536666;
+          font-weight: 400;
+          font-size: 16px;
+          transition: color var(--time);
+        }
+        &.exit {
+          .text {
+            color: var(--red);
+            transition: color var(--time);
+          }
+          @include hover {
+            .text {
+              color: var(--red-hover);
             }
           }
         }
-        .header__profile-name {
-          color: var(--green);
+      }
+    }
+    @include hover {
+      .header__profile-hover-menu {
+        transform: translateY(0);
+        opacity: 1;
+        z-index: 10;
+      }
+      .header__profile-avatar {
+        svg {
+          path {
+            fill: var(--green);
+            stroke: var(--green);
+          }
         }
-        .header__profile-arrow {
-          svg {
-            path {
-              stroke: var(--green);
-            }
+      }
+      .header__profile-name {
+        color: var(--green);
+      }
+      .header__profile-arrow {
+        svg {
+          path {
+            stroke: var(--green);
           }
         }
       }
