@@ -157,3 +157,20 @@ $(".tabs-wrapper-big").each(function () {
     .eq(0)
     .addClass("active");
 });
+
+$(".result").each(function () {
+  let ths = $(this);
+  ths.find(".result__content-item").not(":first").hide();
+  ths
+    .find(".result__buttons-item")
+    .click(function () {
+      ths
+        .find(".result__buttons-item")
+        .removeClass("active")
+        .eq($(this).index())
+        .addClass("active");
+      ths.find(".result__content-item").hide().eq($(this).index()).fadeIn();
+    })
+    .eq(0)
+    .addClass("active");
+});

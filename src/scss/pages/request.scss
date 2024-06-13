@@ -1,0 +1,101 @@
+.request__table {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      background-color: #fff;
+      border-radius: 6px 6px 0 6px;
+      padding: 24px;
+
+      > .item {
+        flex-basis: 18%;
+      }
+      .item {
+        .text {
+          color: #536666;
+          font-weight: 500;
+          font-size: 16px;
+          &.text-accent {
+            color: var(--green);
+          }
+          &.text-nowrap {
+            white-space: nowrap;
+          }
+          @include vp-768 {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .status {
+        font-weight: 600;
+        font-size: 16px;
+        font-family: var(--font-accent);
+        color: var(--red);
+      }
+
+      .flex-item {
+        flex-basis: 43%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        @include vp-768 {
+          display: contents;
+        }
+      }
+
+      @media (max-width: 1400px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+      }
+      @include vp-768 {
+        padding: 16px 8px;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      button {
+        width: 200px;
+        height: 48px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: var(--font-accent);
+        transition: all var(--time);
+        @include vp-768 {
+          width: 164px;
+        }
+        &.white-btn {
+          background-color: #fff;
+          color: var(--green);
+          border-radius: 0 0 0 6px;
+          @include hover {
+            color: var(--green-hover);
+          }
+        }
+        &.green-btn {
+          background-color: var(--green);
+          color: #fff;
+          border-radius: 0 0 6px 0;
+          @include hover {
+            background-color: var(--green-hover);
+          }
+        }
+      }
+    }
+  }
+}
