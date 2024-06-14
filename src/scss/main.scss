@@ -11,3 +11,91 @@
 /* Blocks */
 @import "./blocks/*.scss";
 @import "./pages/*.scss";
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown a,
+.dropdown a:visited {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+}
+.dropdown a {
+  background-color: #fff;
+  display: block;
+  padding: 12px 16px;
+  border: 1px solid #dfe7e7;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+
+  .hida,
+  .multiSel {
+    color: #536666;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-accent);
+  }
+}
+.dropdown .mutliSelect {
+  position: relative;
+}
+.dropdown ul {
+  padding: 16px 12px;
+  border-radius: 8px;
+  border: 1px solid #dfe7e7;
+  background-color: #fff;
+  z-index: 10;
+
+  display: none;
+
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  width: 100%;
+  list-style: none;
+  overflow: auto;
+  min-height: 50px;
+  width: 100%;
+  max-height: 300px;
+  > input {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border: 1px solid #dfe7e7;
+    border-radius: 8px;
+    width: 100%;
+
+    color: #536666;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-accent);
+  }
+  li {
+    padding: 8px;
+    color: #536666;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-accent);
+
+    input {
+      margin-right: 12px;
+    }
+    &:not(:nth-last-child(1)) {
+      margin-bottom: 16px;
+    }
+  }
+}
+.dropdown span.value {
+  display: none;
+}
+.dropdown ul li a {
+  padding: 5px;
+  display: block;
+}
+.dropdown ul li a:hover {
+  background-color: #fff;
+}

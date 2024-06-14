@@ -78,4 +78,15 @@
       }
     }
   }
+  .chart {
+    &__selects {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      .dropdown {
+        min-width: 300px;
+        width: calc(50% - 8px);
+      }
+    }
+  }
 }

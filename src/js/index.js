@@ -174,3 +174,95 @@ $(".result").each(function () {
     .eq(0)
     .addClass("active");
 });
+
+//get input
+let input = document.getElementById("search");
+//get list of value
+let list = document.querySelectorAll(".list li");
+//get input
+let input2 = document.getElementById("search2");
+//get list of value
+let list2 = document.querySelectorAll(".list2 li");
+
+//function search on the list.
+function search() {
+  for (let i = 0; i < list.length; i += 1) {
+    //check if the element contains the value of the input
+    if (list[i].innerText.toLowerCase().includes(input.value.toLowerCase())) {
+      list[i].style.display = "block";
+    } else {
+      list[i].style.display = "none";
+    }
+  }
+}
+
+//to the change run search.
+input.addEventListener("input", search);
+//function search on the list.
+function search2() {
+  for (let i = 0; i < list2.length; i += 1) {
+    //check if the element contains the value of the input
+    if (list2[i].innerText.toLowerCase().includes(input2.value.toLowerCase())) {
+      list2[i].style.display = "block";
+    } else {
+      list2[i].style.display = "none";
+    }
+  }
+}
+
+//to the change run search.
+input2.addEventListener("input", search2);
+
+// filter
+$(document).bind("click", function (e) {
+  var $clicked = $(e.target);
+  if (!$clicked.parents().hasClass("dropdown")) $(".dropdown ul").hide();
+});
+function getSelectedValue(id) {
+  return $("#" + id)
+    .find("a span.value")
+    .html();
+}
+
+$(".dropdown1 a").on("click", function () {
+  $(".dropdown1 ul").slideToggle("fast");
+});
+$(".dropdown2 a").on("click", function () {
+  $(".dropdown2 ul").slideToggle("fast");
+});
+
+$('.dropdown1 .mutliSelect input[type="checkbox"]').on("click", function () {
+  var title = $(this)
+      .closest(".dropdown1 .mutliSelect")
+      .find('.dropdown1 input[type="checkbox"]')
+      .val(),
+    title = $(this).val() + ",";
+
+  if ($(this).is(":checked")) {
+    var html = '<span title="' + title + '">' + title + "</span>";
+    $(".dropdown1 .multiSel").append(html);
+    $(".dropdown1 .hida").hide();
+  } else {
+    $('span[title="' + title + '"]').remove();
+    var ret = $(".hida");
+    $(".dropdown1 a").append(ret);
+  }
+});
+
+$('.dropdown2 .mutliSelect input[type="checkbox"]').on("click", function () {
+  var title = $(this)
+      .closest(".dropdown2 .mutliSelect")
+      .find('.dropdown2 input[type="checkbox"]')
+      .val(),
+    title = $(this).val() + ",";
+
+  if ($(this).is(":checked")) {
+    var html = '<span title="' + title + '">' + title + "</span>";
+    $(".dropdown2 .multiSel").append(html);
+    $(".dropdown2 .hida").hide();
+  } else {
+    $('span[title="' + title + '"]').remove();
+    var ret = $(".hida");
+    $(".dropdown2 a").append(ret);
+  }
+});
