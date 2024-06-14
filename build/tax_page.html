@@ -2411,7 +2411,7 @@
       </div>
     </div>
     <div class="modal-content">
-      <form action="" class="call_back-form">
+      <form action="" class="add_data-form">
         <label>
           <span class="label">Ваше имя</span>
           <input type="text" placeholder="Имя" />
@@ -2424,6 +2424,13 @@
           <span class="label">Комментарий</span>
           <textarea placeholder="Ваш вопрос"></textarea>
         </label>
+        <div class="input-file-row">
+          <label class="input-file">
+            <input type="file" name="file[]" multiple />
+            <span>Выберите файл</span>
+          </label>
+          <div class="input-file-list"></div>
+        </div>
         <div class="call_back-form-buttons">
           <button data-dismiss="modal">Отменить</button>
           <input
@@ -3317,6 +3324,709 @@
     <div class="modal-content">
       <div class="succes__image">
         <img src="img/icon/tax_modal.svg" />
+      </div>
+      <div class="green-btn" data-dismiss="modal">Закрыть</div>
+    </div>
+  </div>
+</div>
+
+<div id="feedback_modal" class="modal">
+  <div class="modal-window feedback_modal">
+    <div class="modal-window__row">
+      <div class="modal-window__title">
+        <span>
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="19"
+              y1="13"
+              x2="19"
+              y2="9.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="11.5"
+              x2="20.5"
+              y2="11.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13"
+              y1="13"
+              x2="13"
+              y2="9.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="11.5"
+              x2="14.5"
+              y2="11.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="25"
+              y1="13"
+              x2="25"
+              y2="9.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="23"
+              y1="11.5"
+              x2="26.5"
+              y2="11.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="25"
+              x2="19"
+              y2="21.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="23.5"
+              x2="20.5"
+              y2="23.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13"
+              y1="25"
+              x2="13"
+              y2="21.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="23.5"
+              x2="14.5"
+              y2="23.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="25"
+              y1="25"
+              x2="25"
+              y2="21.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="23"
+              y1="23.5"
+              x2="26.5"
+              y2="23.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="7"
+              x2="19"
+              y2="3.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="5.5"
+              x2="20.5"
+              y2="5.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13"
+              y1="7"
+              x2="13"
+              y2="3.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="5.5"
+              x2="14.5"
+              y2="5.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="7"
+              y1="7"
+              x2="7"
+              y2="3.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="5"
+              y1="5.5"
+              x2="8.5"
+              y2="5.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="19"
+              x2="19"
+              y2="15.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="17.5"
+              x2="20.5"
+              y2="17.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="25"
+              y1="19"
+              x2="25"
+              y2="15.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="23"
+              y1="17.5"
+              x2="26.5"
+              y2="17.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="31"
+              y1="19"
+              x2="31"
+              y2="15.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="29"
+              y1="17.5"
+              x2="32.5"
+              y2="17.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="31"
+              x2="19"
+              y2="27.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="29.5"
+              x2="20.5"
+              y2="29.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13"
+              y1="31"
+              x2="13"
+              y2="27.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="29.5"
+              x2="14.5"
+              y2="29.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="7"
+              y1="31"
+              x2="7"
+              y2="27.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="5"
+              y1="29.5"
+              x2="8.5"
+              y2="29.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+          </svg>
+        </span>
+        <h2>Оценить работу</h2>
+      </div>
+      <div class="close-modal">
+        <div class="core" data-dismiss="modal"></div>
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.5 4.5L13.5 13.5M4.5 13.5L13.5 4.5L4.5 13.5Z"
+            stroke="#536666"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div class="doctor">
+        <div class="doctor__avatar">
+          <img src="img/avatar.png" />
+        </div>
+        <div class="doctor__info">
+          <div class="doctor__info-name">Водолазов Александр Вениаминович</div>
+          <div class="doctor__info-job">Аллергология-иммунология</div>
+        </div>
+      </div>
+      <form action="" class="feedback_modal-form">
+        <label>
+          <span class="label">Ваша оценка</span>
+          <div class="rating">
+            <input
+              id="star5"
+              name="star"
+              type="radio"
+              value="5"
+              class="radio-btn hide"
+            />
+            <label for="star5">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8592 3.51237C11.2192 2.40717 12.7828 2.40717 13.1416 3.51237L14.4256 7.46277C14.504 7.70336 14.6565 7.91299 14.8612 8.0617C15.066 8.21041 15.3125 8.29059 15.5656 8.29077H19.72C20.8828 8.29077 21.3652 9.77877 20.4256 10.4628L17.0656 12.9036C16.8604 13.0524 16.7076 13.2624 16.6292 13.5034C16.5507 13.7444 16.5506 14.0041 16.6288 14.2452L17.9128 18.1956C18.2728 19.3008 17.0068 20.2212 16.0648 19.5372L12.7048 17.0964C12.4998 16.9476 12.253 16.8674 11.9998 16.8674C11.7465 16.8674 11.4997 16.9476 11.2948 17.0964L7.93476 19.5372C6.99396 20.2212 5.72916 19.3008 6.08796 18.1956L7.37196 14.2452C7.45017 14.0041 7.45003 13.7444 7.37156 13.5034C7.29309 13.2624 7.14032 13.0524 6.93516 12.9036L3.57636 10.464C2.63676 9.77997 3.12036 8.29197 4.28196 8.29197H8.43516C8.68842 8.29204 8.9352 8.21198 9.14019 8.06325C9.34517 7.91452 9.49785 7.70475 9.57636 7.46397L10.8604 3.51357L10.8592 3.51237Z"
+                  fill="#DFE7E7"
+                />
+              </svg>
+            </label>
+            <input
+              id="star4"
+              name="star"
+              type="radio"
+              value="4"
+              class="radio-btn hide"
+            />
+            <label for="star4">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8592 3.51237C11.2192 2.40717 12.7828 2.40717 13.1416 3.51237L14.4256 7.46277C14.504 7.70336 14.6565 7.91299 14.8612 8.0617C15.066 8.21041 15.3125 8.29059 15.5656 8.29077H19.72C20.8828 8.29077 21.3652 9.77877 20.4256 10.4628L17.0656 12.9036C16.8604 13.0524 16.7076 13.2624 16.6292 13.5034C16.5507 13.7444 16.5506 14.0041 16.6288 14.2452L17.9128 18.1956C18.2728 19.3008 17.0068 20.2212 16.0648 19.5372L12.7048 17.0964C12.4998 16.9476 12.253 16.8674 11.9998 16.8674C11.7465 16.8674 11.4997 16.9476 11.2948 17.0964L7.93476 19.5372C6.99396 20.2212 5.72916 19.3008 6.08796 18.1956L7.37196 14.2452C7.45017 14.0041 7.45003 13.7444 7.37156 13.5034C7.29309 13.2624 7.14032 13.0524 6.93516 12.9036L3.57636 10.464C2.63676 9.77997 3.12036 8.29197 4.28196 8.29197H8.43516C8.68842 8.29204 8.9352 8.21198 9.14019 8.06325C9.34517 7.91452 9.49785 7.70475 9.57636 7.46397L10.8604 3.51357L10.8592 3.51237Z"
+                  fill="#DFE7E7"
+                />
+              </svg>
+            </label>
+            <input
+              id="star3"
+              name="star"
+              type="radio"
+              value="3"
+              class="radio-btn hide"
+            />
+            <label for="star3">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8592 3.51237C11.2192 2.40717 12.7828 2.40717 13.1416 3.51237L14.4256 7.46277C14.504 7.70336 14.6565 7.91299 14.8612 8.0617C15.066 8.21041 15.3125 8.29059 15.5656 8.29077H19.72C20.8828 8.29077 21.3652 9.77877 20.4256 10.4628L17.0656 12.9036C16.8604 13.0524 16.7076 13.2624 16.6292 13.5034C16.5507 13.7444 16.5506 14.0041 16.6288 14.2452L17.9128 18.1956C18.2728 19.3008 17.0068 20.2212 16.0648 19.5372L12.7048 17.0964C12.4998 16.9476 12.253 16.8674 11.9998 16.8674C11.7465 16.8674 11.4997 16.9476 11.2948 17.0964L7.93476 19.5372C6.99396 20.2212 5.72916 19.3008 6.08796 18.1956L7.37196 14.2452C7.45017 14.0041 7.45003 13.7444 7.37156 13.5034C7.29309 13.2624 7.14032 13.0524 6.93516 12.9036L3.57636 10.464C2.63676 9.77997 3.12036 8.29197 4.28196 8.29197H8.43516C8.68842 8.29204 8.9352 8.21198 9.14019 8.06325C9.34517 7.91452 9.49785 7.70475 9.57636 7.46397L10.8604 3.51357L10.8592 3.51237Z"
+                  fill="#DFE7E7"
+                />
+              </svg>
+            </label>
+            <input
+              id="star2"
+              name="star"
+              type="radio"
+              value="2"
+              class="radio-btn hide"
+            />
+            <label for="star2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8592 3.51237C11.2192 2.40717 12.7828 2.40717 13.1416 3.51237L14.4256 7.46277C14.504 7.70336 14.6565 7.91299 14.8612 8.0617C15.066 8.21041 15.3125 8.29059 15.5656 8.29077H19.72C20.8828 8.29077 21.3652 9.77877 20.4256 10.4628L17.0656 12.9036C16.8604 13.0524 16.7076 13.2624 16.6292 13.5034C16.5507 13.7444 16.5506 14.0041 16.6288 14.2452L17.9128 18.1956C18.2728 19.3008 17.0068 20.2212 16.0648 19.5372L12.7048 17.0964C12.4998 16.9476 12.253 16.8674 11.9998 16.8674C11.7465 16.8674 11.4997 16.9476 11.2948 17.0964L7.93476 19.5372C6.99396 20.2212 5.72916 19.3008 6.08796 18.1956L7.37196 14.2452C7.45017 14.0041 7.45003 13.7444 7.37156 13.5034C7.29309 13.2624 7.14032 13.0524 6.93516 12.9036L3.57636 10.464C2.63676 9.77997 3.12036 8.29197 4.28196 8.29197H8.43516C8.68842 8.29204 8.9352 8.21198 9.14019 8.06325C9.34517 7.91452 9.49785 7.70475 9.57636 7.46397L10.8604 3.51357L10.8592 3.51237Z"
+                  fill="#DFE7E7"
+                />
+              </svg>
+            </label>
+            <input
+              id="star1"
+              name="star"
+              type="radio"
+              value="1"
+              class="radio-btn hide"
+            />
+            <label for="star1">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.8592 3.51237C11.2192 2.40717 12.7828 2.40717 13.1416 3.51237L14.4256 7.46277C14.504 7.70336 14.6565 7.91299 14.8612 8.0617C15.066 8.21041 15.3125 8.29059 15.5656 8.29077H19.72C20.8828 8.29077 21.3652 9.77877 20.4256 10.4628L17.0656 12.9036C16.8604 13.0524 16.7076 13.2624 16.6292 13.5034C16.5507 13.7444 16.5506 14.0041 16.6288 14.2452L17.9128 18.1956C18.2728 19.3008 17.0068 20.2212 16.0648 19.5372L12.7048 17.0964C12.4998 16.9476 12.253 16.8674 11.9998 16.8674C11.7465 16.8674 11.4997 16.9476 11.2948 17.0964L7.93476 19.5372C6.99396 20.2212 5.72916 19.3008 6.08796 18.1956L7.37196 14.2452C7.45017 14.0041 7.45003 13.7444 7.37156 13.5034C7.29309 13.2624 7.14032 13.0524 6.93516 12.9036L3.57636 10.464C2.63676 9.77997 3.12036 8.29197 4.28196 8.29197H8.43516C8.68842 8.29204 8.9352 8.21198 9.14019 8.06325C9.34517 7.91452 9.49785 7.70475 9.57636 7.46397L10.8604 3.51357L10.8592 3.51237Z"
+                  fill="#DFE7E7"
+                />
+              </svg>
+            </label>
+            <div class="clear"></div>
+          </div>
+        </label>
+        <label class="textarea">
+          <span class="label">Ваш отзыв</span>
+          <textarea placeholder="Отзыв"></textarea>
+        </label>
+        <div class="tax_modal-form-buttons">
+          <button data-dismiss="modal">Отменить</button>
+          <input
+            type="button"
+            value="Оставить отзыв"
+            data-dismiss="modal"
+            data-target="succes_feedback_modal"
+            data-toggle="modal"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="succes_feedback_modal" class="modal">
+  <div class="modal-window succes-modal">
+    <div class="modal-window__row">
+      <div class="modal-window__title">
+        <span>
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="19"
+              y1="13"
+              x2="19"
+              y2="9.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="11.5"
+              x2="20.5"
+              y2="11.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13"
+              y1="13"
+              x2="13"
+              y2="9.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="11.5"
+              x2="14.5"
+              y2="11.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="25"
+              y1="13"
+              x2="25"
+              y2="9.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="23"
+              y1="11.5"
+              x2="26.5"
+              y2="11.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="25"
+              x2="19"
+              y2="21.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="23.5"
+              x2="20.5"
+              y2="23.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13"
+              y1="25"
+              x2="13"
+              y2="21.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="23.5"
+              x2="14.5"
+              y2="23.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="25"
+              y1="25"
+              x2="25"
+              y2="21.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="23"
+              y1="23.5"
+              x2="26.5"
+              y2="23.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="7"
+              x2="19"
+              y2="3.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="5.5"
+              x2="20.5"
+              y2="5.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13"
+              y1="7"
+              x2="13"
+              y2="3.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="5.5"
+              x2="14.5"
+              y2="5.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="7"
+              y1="7"
+              x2="7"
+              y2="3.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="5"
+              y1="5.5"
+              x2="8.5"
+              y2="5.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="19"
+              x2="19"
+              y2="15.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="17.5"
+              x2="20.5"
+              y2="17.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="25"
+              y1="19"
+              x2="25"
+              y2="15.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="23"
+              y1="17.5"
+              x2="26.5"
+              y2="17.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="31"
+              y1="19"
+              x2="31"
+              y2="15.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="29"
+              y1="17.5"
+              x2="32.5"
+              y2="17.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="19"
+              y1="31"
+              x2="19"
+              y2="27.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="17"
+              y1="29.5"
+              x2="20.5"
+              y2="29.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="13"
+              y1="31"
+              x2="13"
+              y2="27.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="29.5"
+              x2="14.5"
+              y2="29.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="7"
+              y1="31"
+              x2="7"
+              y2="27.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+            <line
+              x1="5"
+              y1="29.5"
+              x2="8.5"
+              y2="29.5"
+              stroke="#33C8BF"
+              stroke-linecap="round"
+            />
+          </svg>
+        </span>
+        <h2>Ваш отзыв оправлен</h2>
+      </div>
+      <div class="close-modal">
+        <div class="core" data-dismiss="modal"></div>
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.5 4.5L13.5 13.5M4.5 13.5L13.5 4.5L4.5 13.5Z"
+            stroke="#536666"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div class="text">
+        Мы опубликуем его сразу после проверки модератором.
+      </div>
+      <div class="succes__image">
+        <img src="img/icon/feedback_modal.svg" />
       </div>
       <div class="green-btn" data-dismiss="modal">Закрыть</div>
     </div>
