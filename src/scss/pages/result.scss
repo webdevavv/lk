@@ -16,6 +16,7 @@
       transition: all var(--time);
       @include vp-768 {
         padding: 8px;
+        font-size: 16px;
       }
       &.active {
         background-color: var(--green);
@@ -86,6 +87,12 @@
       .dropdown {
         min-width: 300px;
         width: calc(50% - 8px);
+      }
+      @media (max-width: 650px) {
+        flex-direction: column;
+        .dropdown {
+          width: 100%;
+        }
       }
     }
     &__block {

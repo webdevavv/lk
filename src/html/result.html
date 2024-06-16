@@ -475,13 +475,57 @@
                     </a>
                     <div class="mutliSelect">
                       <ul class="list">
-                        <input id="search" type="text" placeholder="Поиск..." />
-                        <li><input type="checkbox" value="Кровь" />Кровь</li>
-                        <li><input type="checkbox" value="Сахар" />Сахар</li>
+                        <div class="search">
+                          <input
+                            id="search"
+                            type="text"
+                            placeholder="Поиск..."
+                          />
+                        </div>
                         <li>
-                          <input type="checkbox" value="Кальций" />Кальций
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox"
+                              value="Кровь"
+                            />
+                            <span class="checkmark"></span>
+                          </div>
+                          Кровь
                         </li>
-                        <li><input type="checkbox" value="Железо" />Железо</li>
+                        <li>
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox"
+                              value="Сахар"
+                            />
+                            <span class="checkmark"></span>
+                          </div>
+                          Сахар
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox"
+                              value="Кальций"
+                            />
+                            <span class="checkmark"></span>
+                          </div>
+                          Кальций
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox"
+                              value="Железо"
+                            />
+                            <span class="checkmark"></span>
+                          </div>
+                          Железо
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -497,12 +541,50 @@
                           type="text"
                           placeholder="Поиск..."
                         />
-                        <li><input type="checkbox" value="Кровь" />Кровь</li>
-                        <li><input type="checkbox" value="Сахар" />Сахар</li>
                         <li>
-                          <input type="checkbox" value="Кальций" />Кальций
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox"
+                              value="Кровь"
+                            />
+                            <span class="checkmark"></span>
+                          </div>
+                          Кровь
                         </li>
-                        <li><input type="checkbox" value="Железо" />Железо</li>
+                        <li>
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox"
+                              value="Сахар"
+                            />
+                            <span class="checkmark"></span>
+                          </div>
+                          Сахар
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox"
+                              value="Кальций"
+                            />
+                            <span class="checkmark"></span>
+                          </div>
+                          Кальций
+                        </li>
+                        <li>
+                          <div class="checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox"
+                              value="Железо"
+                            />
+                            <span class="checkmark"></span>
+                          </div>
+                          Железо
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -523,6 +605,12 @@
     @@include('blocks/footer.html') @@include('blocks/modals.html')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"
+      integrity="sha512-Hn1w6YiiFw6p6S2lXv6yKeqTk0PLVzeCwWY9n32beuPjQ5HLcvz5l2QsP+KilEr1ws37rCTw3bZpvfvVIeTh0Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

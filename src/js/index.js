@@ -303,6 +303,26 @@ const genericOptions = {
     legend: {
       display: false,
     },
+    annotation: {
+      annotations: {
+        line1: {
+          type: "line",
+          yMin: 28,
+          yMax: 28,
+          borderColor: "rgba(0, 170, 160, 1)",
+          borderWidth: 2,
+          borderDash: [10, 10],
+        },
+        line2: {
+          type: "line",
+          yMin: 37,
+          yMax: 37,
+          borderColor: "rgba(0, 170, 160, 1)",
+          borderWidth: 2,
+          borderDash: [10, 10],
+        },
+      },
+    },
   },
 };
 
@@ -322,7 +342,7 @@ const config = {
     ],
     datasets: [
       {
-        data: [10, 20, 30, 35, 35, 35, 47, 47, 47, 47, 47, 47],
+        data: [10, 20, 28, 37, 37, 37, 47, 47, 47, 47, 47, 47],
         backgroundColor: (context) => {
           const bgColor = ["rgba(0, 170, 160, 0.75)", "rgba(0, 170, 160, 0.1)"];
           if (!context.chart.chartArea) {
