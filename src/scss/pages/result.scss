@@ -88,5 +88,21 @@
         width: calc(50% - 8px);
       }
     }
+    &__block {
+      &-text {
+        font-family: var(--font-accent);
+        color: #536666;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 16px 0;
+      }
+      &-canvas {
+        height: 300px;
+        canvas {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
   }
 }

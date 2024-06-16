@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
     <title>Результаты анализов</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -1052,7 +1053,9 @@
                 </div>
                 <div class="chart__block">
                   <div class="chart__block-text">График</div>
-                  <div class="chart__block-canvas"></div>
+                  <div class="chart__block-canvas">
+                    <canvas id="myChart"></canvas>
+                  </div>
                 </div>
               </div>
             </div>
@@ -3033,7 +3036,7 @@
         </label>
         <label>
           <span class="label">Телефон</span>
-          <input type="tel" placeholder="Телефон" />
+          <input type="tel" id="phone" placeholder="Телефон" />
         </label>
         <label>
           <span class="label">Паспорт</span>
@@ -4050,6 +4053,7 @@
 </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

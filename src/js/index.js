@@ -266,3 +266,89 @@ $('.dropdown2 .mutliSelect input[type="checkbox"]').on("click", function () {
     $(".dropdown2 a").append(ret);
   }
 });
+
+const ctx = document.getElementById("myChart");
+// Цвет если меньше 28 (ограничение 28 поменять)
+const low = (ctx, value) => (ctx.p0.parsed.y < 28 ? value : undefined);
+// Цвет если от 28 до 36 (ограничения поменять)
+const normal = (ctx, value) =>
+  ctx.p0.parsed.y >= 28 && ctx.p0.parsed.y <= 36 ? value : undefined;
+// Цвет если больше 36 (ограничение 36 поменять)
+const high = (ctx, value) => (ctx.p0.parsed.y > 36 ? value : undefined);
+
+const genericOptions = {
+  interaction: {
+    intersect: false,
+  },
+  radius: 0,
+  responsive: true,
+  maintainAspectRatio: false,
+  scales: {
+    x: {
+      grid: {
+        display: false,
+      },
+    },
+    y: {
+      ticks: {
+        min: 0,
+        max: 50,
+        stepSize: 10,
+      },
+    },
+  },
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+};
+
+const config = {
+  type: "line",
+  data: {
+    labels: [
+      "Январь",
+      "Февраль",
+      "Март",
+      "Апрель",
+      "Май",
+      "Сентябрь",
+      "Октябрь",
+      "Ноябрь",
+      "Декабрь",
+    ],
+    datasets: [
+      {
+        data: [10, 20, 30, 35, 35, 35, 47, 47, 47, 47, 47, 47],
+        backgroundColor: (context) => {
+          const bgColor = ["rgba(0, 170, 160, 0.75)", "rgba(0, 170, 160, 0.1)"];
+          if (!context.chart.chartArea) {
+            return;
+          }
+          const {
+            ctx,
+            data,
+            chartArea: { top, bottom },
+          } = context.chart;
+          const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+          gradientBg.addColorStop(0, bgColor[0]);
+          gradientBg.addColorStop(1, bgColor[1]);
+          return gradientBg;
+        },
+        borderColor: "rgb(0, 170, 160)",
+        segment: {
+          borderColor: (ctx) =>
+            low(ctx, "rgb(242, 153, 74)") ||
+            normal(ctx, "rgb(0, 170, 160)") ||
+            high(ctx, "rgb(213, 56, 99)"),
+        },
+        spanGaps: true,
+        fill: true,
+      },
+    ],
+  },
+  options: genericOptions,
+};
+
+new Chart(ctx, config);

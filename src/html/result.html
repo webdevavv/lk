@@ -509,7 +509,9 @@
                 </div>
                 <div class="chart__block">
                   <div class="chart__block-text">График</div>
-                  <div class="chart__block-canvas"></div>
+                  <div class="chart__block-canvas">
+                    <canvas id="myChart"></canvas>
+                  </div>
                 </div>
               </div>
             </div>
@@ -520,6 +522,7 @@
 
     @@include('blocks/footer.html') @@include('blocks/modals.html')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>
