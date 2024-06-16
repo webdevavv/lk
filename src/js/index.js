@@ -224,10 +224,12 @@ function getSelectedValue(id) {
     .html();
 }
 
-$(".dropdown1 a").on("click", function () {
+$(".dropdown1 a").on("click", function (event) {
+  event.preventDefault();
   $(".dropdown1 ul").slideToggle("fast");
 });
-$(".dropdown2 a").on("click", function () {
+$(".dropdown2 a").on("click", function (event) {
+  event.preventDefault();
   $(".dropdown2 ul").slideToggle("fast");
 });
 
