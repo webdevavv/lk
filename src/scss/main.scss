@@ -41,6 +41,11 @@
     font-weight: 400;
     font-family: var(--font-accent);
   }
+  &:has(.multiSel:not(:empty)) {
+    .hida {
+      display: none;
+    }
+  }
   &::before {
     content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.8337 7.5L10.0003 13.3333L4.16699 7.5' stroke='%236F727A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
     position: absolute;

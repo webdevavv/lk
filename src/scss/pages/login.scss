@@ -4,8 +4,11 @@
   align-items: center;
   height: 100%;
   padding: 80px 0;
-  @media screen and (min-height: 700px) {
+  @media screen and (min-height: 850px) {
     height: calc(100vh - 120px);
+  }
+  @media screen and (min-height: 700px) {
+    height: calc(100vh - 220px);
   }
   @include vp-768 {
     padding: 40px 16px;

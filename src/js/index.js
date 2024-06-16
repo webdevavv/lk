@@ -238,16 +238,13 @@ $('.dropdown1 .mutliSelect input[type="checkbox"]').on("click", function () {
       .closest(".dropdown1 .mutliSelect")
       .find('.dropdown1 input[type="checkbox"]')
       .val(),
-    title = $(this).val() + ",";
+    title = $(this).val() + ", ";
 
   if ($(this).is(":checked")) {
     var html = '<span title="' + title + '">' + title + "</span>";
     $(".dropdown1 .multiSel").append(html);
-    $(".dropdown1 .hida").hide();
   } else {
     $('span[title="' + title + '"]').remove();
-    var ret = $(".hida");
-    $(".dropdown1 a").append(ret);
   }
 });
 
@@ -256,16 +253,13 @@ $('.dropdown2 .mutliSelect input[type="checkbox"]').on("click", function () {
       .closest(".dropdown2 .mutliSelect")
       .find('.dropdown2 input[type="checkbox"]')
       .val(),
-    title = $(this).val() + ",";
+    title = $(this).val() + ", ";
 
   if ($(this).is(":checked")) {
     var html = '<span title="' + title + '">' + title + "</span>";
     $(".dropdown2 .multiSel").append(html);
-    $(".dropdown2 .hida").hide();
   } else {
     $('span[title="' + title + '"]').remove();
-    var ret = $(".hida");
-    $(".dropdown2 a").append(ret);
   }
 });
 

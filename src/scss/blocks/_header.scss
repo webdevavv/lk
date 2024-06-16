@@ -149,6 +149,11 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  &.burger__menu--login {
+    .burger__menu-row {
+      margin-bottom: 24px;
+    }
+  }
   &-row {
     display: flex;
     justify-content: space-between;
@@ -228,7 +233,8 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    button {
+    button,
+    a {
       width: 100%;
       text-align: center;
     }
