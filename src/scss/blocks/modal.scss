@@ -762,3 +762,45 @@
   }
 }
 // feedback_modal
+
+// delete-modal
+.delete-modal {
+  max-width: 560px;
+  width: 100%;
+  h4 {
+    font-family: var(--font-accent);
+    font-weight: 700;
+    color: #232325;
+    font-size: 20px;
+  }
+  .text {
+    font-size: 16px;
+    color: #232325;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  &__buttons {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    div {
+      flex: calc(50% - 8px);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &.green-btn {
+        font-weight: 700;
+        color: var(--green);
+        font-size: 16px;
+        font-family: var(--font-accent);
+        transition: color var(--time);
+        @include hover {
+          color: var(--green-hover);
+        }
+      }
+    }
+  }
+}
+// delete-modal

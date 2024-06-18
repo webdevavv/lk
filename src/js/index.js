@@ -141,6 +141,47 @@ document.addEventListener(
 );
 // modals
 
+// Удаление мед-данных
+const medData = document.querySelectorAll("#medic-card-data");
+const modalDeleteButton = document.getElementById("delete_modal__button");
+const modalDelete = document.getElementById("delete_modal");
+if (medData) {
+  medData.forEach((el) => {
+    const deleteButton = el.querySelector("#delete-button > .delete__button");
+
+    deleteButton.addEventListener("click", () => {
+      modalDelete.classList.add("open");
+      modalDeleteButton.addEventListener("click", () => {
+        el.style.display = "none";
+      });
+    });
+  });
+}
+// Удаление мед-данных
+
+// Работа с заявками на прием
+const reqData = document.querySelectorAll("#request-card-data");
+const modalCancelButton = document.getElementById("cancel_modal__button");
+const modalCancel = document.getElementById("cancel_modal");
+if (reqData) {
+  reqData.forEach((el) => {
+    const cancelButton = el.querySelector("#cancel");
+    const confirmButton = el.querySelector("#confirm");
+
+    cancelButton.addEventListener("click", () => {
+      modalCancel.classList.add("open");
+      modalCancelButton.addEventListener("click", () => {
+        el.style.display = "none";
+      });
+    });
+    confirmButton.addEventListener("click", () => {
+      el.querySelector(".status_planed").style.display = "none";
+      el.querySelector(".status_confirmed").style.display = "block";
+    });
+  });
+}
+// Работа с заявками на прием
+
 $(".tabs-wrapper-big").each(function () {
   let ths = $(this);
   ths.find(".tab-item-big").not(":first").hide();

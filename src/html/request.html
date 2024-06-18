@@ -351,7 +351,7 @@
           <div class="tabs-conten-bigt">
             <div class="tab-item-big">
               <div class="request__table">
-                <div class="request__table-item">
+                <div class="request__table-item" id="request-card-data">
                   <div class="request__table-item-head">
                     <div class="item">
                       <span class="label">Подразделение</span>
@@ -382,213 +382,19 @@
                         <span class="label">Время</span>
                         <div class="text">12:30</div>
                       </div>
-                      <div class="status">Запланирована</div>
+                      <div class="status status_planed">Запланирована</div>
+                      <div class="status status_confirmed">Подтверждено</div>
                     </div>
                   </div>
                   <div class="request__table-item-buttons">
-                    <button class="white-btn">Отменить</button>
-                    <button class="green-btn">Подтвердить</button>
-                  </div>
-                </div>
-                <div class="request__table-item">
-                  <div class="request__table-item-head">
-                    <div class="item">
-                      <span class="label">Подразделение</span>
-                      <div class="text">Ул. Пушкина 29</div>
-                    </div>
-                    <div class="item">
-                      <span class="label">Специализация</span>
-                      <a href="#" class="text text-accent">
-                        Сердечно-сосудистая хирургия, флеболог
-                      </a>
-                    </div>
-                    <div class="item">
-                      <span class="label">Услуга</span>
-                      <a href="#" class="text text-accent">УЗИ сердца</a>
-                    </div>
-                    <div class="flex-item">
-                      <div class="item">
-                        <span class="label">Врач</span>
-                        <a href="#" class="text text-accent text-nowrap">
-                          Водолазов А. В.
-                        </a>
-                      </div>
-                      <div class="item">
-                        <span class="label">Дата</span>
-                        <div class="text">22.07.24</div>
-                      </div>
-                      <div class="item">
-                        <span class="label">Время</span>
-                        <div class="text">12:30</div>
-                      </div>
-                      <div class="status">Запланирована</div>
-                    </div>
-                  </div>
-                  <div class="request__table-item-buttons">
-                    <button class="white-btn">Отменить</button>
-                    <button class="green-btn">Подтвердить</button>
-                  </div>
-                </div>
-                <div class="request__table-item">
-                  <div class="request__table-item-head">
-                    <div class="item">
-                      <span class="label">Подразделение</span>
-                      <div class="text">Ул. Пушкина 29</div>
-                    </div>
-                    <div class="item">
-                      <span class="label">Специализация</span>
-                      <a href="#" class="text text-accent">
-                        Сердечно-сосудистая хирургия, флеболог
-                      </a>
-                    </div>
-                    <div class="item">
-                      <span class="label">Услуга</span>
-                      <a href="#" class="text text-accent">УЗИ сердца</a>
-                    </div>
-                    <div class="flex-item">
-                      <div class="item">
-                        <span class="label">Врач</span>
-                        <a href="#" class="text text-accent text-nowrap">
-                          Водолазов А. В.
-                        </a>
-                      </div>
-                      <div class="item">
-                        <span class="label">Дата</span>
-                        <div class="text">22.07.24</div>
-                      </div>
-                      <div class="item">
-                        <span class="label">Время</span>
-                        <div class="text">12:30</div>
-                      </div>
-                      <div class="status">Запланирована</div>
-                    </div>
-                  </div>
-                  <div class="request__table-item-buttons">
-                    <button class="white-btn">Отменить</button>
-                    <button class="green-btn">Подтвердить</button>
-                  </div>
-                </div>
-                <div class="request__table-item">
-                  <div class="request__table-item-head">
-                    <div class="item">
-                      <span class="label">Подразделение</span>
-                      <div class="text">Ул. Пушкина 29</div>
-                    </div>
-                    <div class="item">
-                      <span class="label">Специализация</span>
-                      <a href="#" class="text text-accent">
-                        Сердечно-сосудистая хирургия, флеболог
-                      </a>
-                    </div>
-                    <div class="item">
-                      <span class="label">Услуга</span>
-                      <a href="#" class="text text-accent">УЗИ сердца</a>
-                    </div>
-                    <div class="flex-item">
-                      <div class="item">
-                        <span class="label">Врач</span>
-                        <a href="#" class="text text-accent text-nowrap">
-                          Водолазов А. В.
-                        </a>
-                      </div>
-                      <div class="item">
-                        <span class="label">Дата</span>
-                        <div class="text">22.07.24</div>
-                      </div>
-                      <div class="item">
-                        <span class="label">Время</span>
-                        <div class="text">12:30</div>
-                      </div>
-                      <div class="status">Запланирована</div>
-                    </div>
-                  </div>
-                  <div class="request__table-item-buttons">
-                    <button class="white-btn">Отменить</button>
-                    <button class="green-btn">Подтвердить</button>
+                    <button class="white-btn" id="cancel">Отменить</button>
+                    <button class="green-btn" id="confirm">Подтвердить</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="tab-item-big">
               <div class="request__table">
-                <div class="request__table-item">
-                  <div class="request__table-item-head">
-                    <div class="item">
-                      <span class="label">Подразделение</span>
-                      <div class="text">Ул. Пушкина 29</div>
-                    </div>
-                    <div class="item">
-                      <span class="label">Специализация</span>
-                      <a href="#" class="text text-accent">
-                        Сердечно-сосудистая хирургия, флеболог
-                      </a>
-                    </div>
-                    <div class="item">
-                      <span class="label">Услуга</span>
-                      <a href="#" class="text text-accent">УЗИ сердца</a>
-                    </div>
-                    <div class="flex-item">
-                      <div class="item">
-                        <span class="label">Врач</span>
-                        <a href="#" class="text text-accent text-nowrap">
-                          Водолазов А. В.
-                        </a>
-                      </div>
-                      <div class="item">
-                        <span class="label">Дата</span>
-                        <div class="text">22.07.24</div>
-                      </div>
-                      <div class="item">
-                        <span class="label">Время</span>
-                        <div class="text">12:30</div>
-                      </div>
-                      <div class="status">Запланирована</div>
-                    </div>
-                  </div>
-                  <div class="request__table-item-buttons">
-                    <button class="white-btn">Отменить</button>
-                    <button class="green-btn">Подтвердить</button>
-                  </div>
-                </div>
-                <div class="request__table-item">
-                  <div class="request__table-item-head">
-                    <div class="item">
-                      <span class="label">Подразделение</span>
-                      <div class="text">Ул. Пушкина 29</div>
-                    </div>
-                    <div class="item">
-                      <span class="label">Специализация</span>
-                      <a href="#" class="text text-accent">
-                        Сердечно-сосудистая хирургия, флеболог
-                      </a>
-                    </div>
-                    <div class="item">
-                      <span class="label">Услуга</span>
-                      <a href="#" class="text text-accent">УЗИ сердца</a>
-                    </div>
-                    <div class="flex-item">
-                      <div class="item">
-                        <span class="label">Врач</span>
-                        <a href="#" class="text text-accent text-nowrap">
-                          Водолазов А. В.
-                        </a>
-                      </div>
-                      <div class="item">
-                        <span class="label">Дата</span>
-                        <div class="text">22.07.24</div>
-                      </div>
-                      <div class="item">
-                        <span class="label">Время</span>
-                        <div class="text">12:30</div>
-                      </div>
-                      <div class="status">Запланирована</div>
-                    </div>
-                  </div>
-                  <div class="request__table-item-buttons">
-                    <button class="white-btn">Отменить</button>
-                    <button class="green-btn">Подтвердить</button>
-                  </div>
-                </div>
                 <div class="request__table-item">
                   <div class="request__table-item-head">
                     <div class="item">

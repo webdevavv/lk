@@ -4034,6 +4034,79 @@
   </div>
 </div>
 
+<div id="delete_modal" class="modal">
+  <div class="modal-window delete-modal">
+    <div class="modal-window__row">
+      <div class="modal-window__title">
+        <h4>Удаление</h4>
+      </div>
+      <div class="close-modal">
+        <div class="core" data-dismiss="modal"></div>
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.5 4.5L13.5 13.5M4.5 13.5L13.5 4.5L4.5 13.5Z"
+            stroke="#536666"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div class="text">Вы хотите удалить файл из списка?</div>
+      <div class="delete-modal__buttons">
+        <div class="green-btn" data-dismiss="modal">Закрыть</div>
+        <div class="red-btn" data-dismiss="modal" id="delete_modal__button">
+          Удалить
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="cancel_modal" class="modal">
+  <div class="modal-window delete-modal">
+    <div class="modal-window__row">
+      <div class="modal-window__title">
+        <h4>Отмена</h4>
+      </div>
+      <div class="close-modal">
+        <div class="core" data-dismiss="modal"></div>
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.5 4.5L13.5 13.5M4.5 13.5L13.5 4.5L4.5 13.5Z"
+            stroke="#536666"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div class="text">Вы хотите отменить заявку на прием?</div>
+      <div class="delete-modal__buttons">
+        <div class="green-btn" data-dismiss="modal">Закрыть</div>
+        <div class="red-btn" data-dismiss="modal" id="cancel_modal__button">
+          Отменить
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="https://unpkg.com/imask"></script>
     <script>
       var element = document.getElementById("phone");
