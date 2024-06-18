@@ -174,9 +174,10 @@ if (reqData) {
         el.style.display = "none";
       });
     });
-    confirmButton.addEventListener("click", () => {
+    confirmButton.addEventListener("click", (button) => {
       el.querySelector(".status_planed").style.display = "none";
       el.querySelector(".status_confirmed").style.display = "block";
+      confirmButton.classList.add("hide");
     });
   });
 }
